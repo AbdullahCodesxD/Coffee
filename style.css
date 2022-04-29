@@ -1,0 +1,271 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Roboto", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Barlow Condensed", sans-serif; }
+
+span {
+  color: #c4996c; }
+
+a {
+  position: relative;
+  transition: all 0.5s ease-in-out; }
+
+.container {
+  display: block;
+  max-width: 1090px;
+  margin: auto; }
+
+.text-align {
+  text-align: center; }
+
+.line {
+  height: 5px;
+  width: 15%;
+  background-color: #785836;
+  display: block;
+  margin: 20px auto; }
+
+.btn-dark, .btn-light {
+  padding: 10px 25px;
+  transition: all 0.5s ease-in-out;
+  border-radius: 5px;
+  cursor: pointer;
+  width: max-content;
+  display: block;
+  margin: auto; }
+
+.btn-dark {
+  background-color: #222;
+  color: #c4996c; }
+  .btn-dark:hover {
+    background-color: #333;
+    color: #c4996c; }
+
+.btn-light {
+  background-color: #c4996c;
+  color: #fff; }
+  .btn-light:hover {
+    background-color: #FFD4A6;
+    color: #222; }
+
+header {
+  height: 100vh;
+  width: 100%;
+  background: url(/img/ez.png) no-repeat center center/cover;
+  position: relative; }
+  header::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25); }
+  header nav {
+    padding: 20px 0px;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    text-align: center;
+    margin: 0 auto; }
+    header nav .logo {
+      margin-left: 30px; }
+      header nav .logo a {
+        color: #c4996c;
+        font-family: "Roboto", sans-serif; }
+        header nav .logo a:hover {
+          color: #FFD4A6; }
+    header nav .links {
+      margin-right: 60px; }
+      header nav .links ul {
+        display: flex;
+        gap: 20px; }
+        header nav .links ul li {
+          padding: 10px 0px; }
+          header nav .links ul li a {
+            font-family: "Open Sans", sans-serif;
+            color: #c4996c;
+            padding: 15px;
+            margin: 0px 7px;
+            border-bottom: 1px solid transparent; }
+            header nav .links ul li a:hover {
+              color: #FFD4A6;
+              border-color: #785836; }
+  header .content {
+    position: relative;
+    color: #f3f3f3;
+    width: 450px;
+    transform: translate(10%, 40%);
+    line-height: 1.6;
+    margin-bottom: 110px; }
+    header .content h3 {
+      font-size: 26px;
+      margin: 20px 0px; }
+    header .content p {
+      font-family: "Roboto", sans-serif;
+      font-weight: 300; }
+
+#info {
+  padding: 20px 0px 40px 0px;
+  margin: 0px 0px 20px 0px; }
+  #info .title {
+    font-size: 26px;
+    margin: 30px 0px;
+    text-align: center; }
+  #info .content div {
+    margin: 20px 20px 40px 20px; }
+    #info .content div h3 {
+      font-size: 22px;
+      margin: 40px 10px 10px 0px; }
+    #info .content div p {
+      display: block;
+      position: relative;
+      font-family: "Open Sans", sans-serif;
+      left: 12%;
+      width: 900px;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 1.6; }
+      #info .content div p span {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500; }
+
+#order {
+  background-color: #1a1a1a;
+  padding: 0px 0px 40px 0px;
+  color: #f3f3f3; }
+  #order .img {
+    width: 70vw;
+    height: 30vh;
+    background: url(/img/more.png) no-repeat center center/cover;
+    margin: 0 auto 40px auto; }
+  #order .line {
+    margin-bottom: 70px; }
+  #order .flex {
+    display: flex;
+    justify-content: space-around; }
+    #order .flex .image {
+      width: 250px;
+      height: 250px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      position: relative; }
+      #order .flex .image:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.35); }
+    #order .flex .arab-img {
+      background: url(/img/arabica.png) no-repeat center center/cover; }
+    #order .flex .lib-img {
+      background: url(/img/liberica.png) no-repeat center center/cover; }
+    #order .flex .rob-img {
+      background: url(/img/robusta.png) no-repeat center center/cover; }
+    #order .flex h4 {
+      color: #c4996c;
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 20px; }
+    #order .flex .btn-light {
+      align-self: center; }
+
+#contact {
+  padding: 40px 20px; }
+  #contact h2 {
+    font-size: 26px; }
+  #contact .contact {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; }
+    #contact .contact .cont {
+      display: flex;
+      gap: 20px; }
+      #contact .contact .cont i {
+        color: #c4996c; }
+      #contact .contact .cont h4 {
+        position: relative;
+        transform: translateY(10px); }
+        #contact .contact .cont h4 span {
+          color: #202326;
+          font-family: "Barlow Condensed", sans-serif; }
+
+footer {
+  height: 60px;
+  width: 100%;
+  background-color: #202326; }
+
+@media (max-width: 1060px) {
+  #info .content div {
+    margin: 20px 10px 40px 30px; }
+    #info .content div p {
+      width: 750px; } }
+@media (max-width: 900px) {
+  header .content {
+    width: 350px;
+    transform: translate(10%, 20%); }
+    header .content h3 {
+      font-size: 26px;
+      margin: 20px 0px; }
+
+  #order .flex .image {
+    width: 200px;
+    height: 200px; }
+
+  #info .content div {
+    margin: 20px 10px 40px 40px; }
+    #info .content div p {
+      width: 600px; } }
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    align-items: center; }
+    header nav .logo {
+      margin-left: 0; }
+    header nav .links {
+      margin-right: 0; }
+  header .content {
+    margin-bottom: 25vw; }
+
+  #info .content div {
+    margin: 20px 10px 40px 50px; }
+    #info .content div p {
+      width: 450px; }
+
+  #order .flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    #order .flex .image {
+      width: 240px;
+      height: 240px; }
+    #order .flex .btn-light {
+      margin-bottom: 60px; } }
+@media (max-width: 600px) {
+  header nav {
+    gap: 7px; }
+    header nav .links ul {
+      gap: 0px; }
+  header .content {
+    width: 290px;
+    transform: translate(10%, 5%);
+    margin-bottom: 30vw; }
+
+  #info .title {
+    font-size: 22px; }
+  #info .content div {
+    margin: 20px 0px 40px 45px; }
+    #info .content div h3 {
+      font-size: 20px; }
+    #info .content div p {
+      width: 260px; } }
+@media (max-width: 370px) {
+  #info .content div {
+    margin: 20px 0px 40px 15px; } }
